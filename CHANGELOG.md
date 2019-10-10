@@ -1,19 +1,24 @@
 # 2.4.0 (unreleased)
 # Features
-- Add KV compatibility #198 
-- Upgrade dependencies #200 
+- Add KV compatibility #198
+- Upgrade dependencies #200
 
 # Bug fixes
-- Fix desktop client icons #199 - #157 
-- Fix issue with favicon #188 
+- Fix desktop client icons #199 - #157
+- Fix issue with favicon #188
+
+# 2.3.1
+## Features:
+- Add support for ingress labels in Helm chart
+- Add support for full name override in Helm chart
 
 # 2.3.0
 ## Features:
-- Refactor PolicyPicker to ItemPicker for general use - #175 
-- Refactor item listing to use a centralized class /w filtering, pagination and sorting by default - #175 + #187 
+- Refactor PolicyPicker to ItemPicker for general use - #175
+- Refactor item listing to use a centralized class /w filtering, pagination and sorting by default - #175 + #187
 - Add backend mount description field - #105
 - Allow self-signed CA certifications - #140
-- Support Okta Authentication Backend - #156 
+- Support Okta Authentication Backend - #156
 
 # 2.2.0
 ## Features
@@ -67,7 +72,7 @@
 - React best-practices inspired refactor - https://github.com/djenriquez/vault-ui/pull/32
 - Update backend API to match Vault API by using the express server as a passthrough - https://github.com/djenriquez/vault-ui/pull/46
 - Added ability to set Default URL + Auth with environment variables - https://github.com/djenriquez/vault-ui/pull/36
-- Added `VAULT_SUPPLIED_TOKEN_HEADER` header to enable SSO functionality - [Feature request #39](https://github.com/djenriquez/vault-ui/issues/39) + #40 
+- Added `VAULT_SUPPLIED_TOKEN_HEADER` header to enable SSO functionality - [Feature request #39](https://github.com/djenriquez/vault-ui/issues/39) + #40
 - Support multiple generic backends - https://github.com/djenriquez/vault-ui/pull/31
 - Fixed bug with auto-logout where large values caused logout to happen immediately - https://github.com/djenriquez/vault-ui/pull/35
 - Improved value editting with [josdejong/jsoneditor](josdejong/jsoneditor) - https://github.com/djenriquez/vault-ui/pull/38 (Note: HCL is no longer supported as a format for managing secrets or policies)
