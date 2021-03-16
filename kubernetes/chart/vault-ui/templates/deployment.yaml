@@ -28,7 +28,10 @@ spec:
               value: {{ .Values.vault.url }}
             - name: VAULT_AUTH_DEFAULT
               value: {{ .Values.vault.auth }}
-
+            {{- if .Values.vault.customCACert }}
+            - name: CUSTOM_CA_CERT
+              value: {{ .Values.vault.customCACert }}
+            {{- end }}
           ports:
             - containerPort: {{ .Values.service.internalPort }}
           livenessProbe:

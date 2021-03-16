@@ -41,3 +41,5 @@ resources: {}
 vault:
   auth: TOKEN
   url: http://vault:8200
+  ## optional if you want to use a self-signed cert
+  #customCACert: /path/to/CAcert
